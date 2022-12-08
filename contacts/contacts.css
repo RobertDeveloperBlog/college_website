@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  font-family: 'SoDo Sans Semibold', Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(175, 185, 193, 0.75);
+  -moz-box-shadow: 0px 5px 16px 0px rgba(175, 185, 193, 0.75);
+  box-shadow: 0px 5px 16px 0px rgba(175, 185, 193, 0.75);
+}
+
+.navbar-left a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-left a:hover {
+  transform: scale(1.1);
+  transition: all 300ms;
+}
+
+.menu {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  line-height: 21px;
+}
+
+.ice-school {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  line-height: 21px;
+  color: purple;
+}
+
+.menu:hover {
+  color: purple;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 150ms;
+}
+
+.menu:hover:after {
+  margin: auto;
+  content: '';
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: purple;
+  margin-top: 4px;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #111;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left > *,
+.navbar-right > * {
+  margin: 10px;
+}
+
+.back {
+  font-weight: 500;
+  border-radius: 40px;
+  border: 1px solid black;
+  padding: 5px 20px 5px 20px;
+  cursor: pointer;
+
+  background-color: #fff;
+  color: #111 !important;
+}
+
+.back:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.navbar-right #contacts {
+  color: purple;
+  text-decoration: none;
+}
+
+.schedule__title {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  max-width: 950px;
+  margin: 50px auto 70px;
+  text-align: center;
+}
+
+.inp {
+  display: flex;
+}
+
+textarea {
+  resize: none;
+  width: 340px;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.send__button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(254, 101, 0);
+  border-color: rgb(254, 101, 0);
+  color: #fff;
+  padding: 12px 58px;
+}
+
+.send__button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #e3b536;
+  border-color: #e3b536;
+}
+
+.clear__button {
+  font-weight: bold;
+  font-size: 16px;
+  color: #111;
+  background-color: #fff;
+  border-color: #cdcdcd;
+  padding: 12px 24px;
+  margin-left: 14px;
+}
+
+.clear__button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #cdcdcd;
+  border-color: #cdcdcd;
+}
+
+/* Footer */
+
+.footer-container {
+  display: flex;
+  justify-content: start;
+  padding: 40px;
+}
+
+.footer {
+  margin-top: 200px;
+  box-shadow: 0 -1px 3px rgb(0 0 0 / 10%), 0 -2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+}
+
+.social-networks {
+  padding: 40px 40px;
+}
+
+.social-networks img {
+  width: 40px;
+  height: 40px;
+  margin: 0px 7px;
+}
+
+.social-networks img:hover {
+  transition: all 0.2s ease-out;
+  transform-origin: center;
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+.e-mail {
+  display: flex;
+  margin: 0px 40px;
+}
+
+.e-mail:hover {
+  text-decoration: underline 2px solid black;
+  cursor: pointer;
+}
+
+.school__text {
+  margin: 0px 40px;
+  font-size: 14px;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  color: rgba(0, 0, 0, 0.58);
+}
