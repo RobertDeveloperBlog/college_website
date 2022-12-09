@@ -24,6 +24,12 @@ body {
   line-height: 21px;
 }
 
+.menu-img img {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
 .ice-school {
   text-transform: uppercase;
   font-size: 16px;
@@ -229,4 +235,58 @@ body {
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
   color: rgba(0, 0, 0, 0.58);
+}
+
+@media (max-width: 768px) {
+  .sign-in {
+    display: none;
+  }
+
+  .join-now {
+    display: none;
+  }
+
+  .back {
+    display: none;
+  }  
+
+  .menu {
+    display: none;
+  }  
+
+  .navbar {
+    width: 100%;
+    padding: 20px 0px;
+  }
+
+  .menu-img img {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .menu-img img:hover {
+    cursor: pointer;
+  }
+
+  .circle__programs {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    align-items: center;
+  }
+
+  .circle__programs div {
+    margin-top: 20px;
+  }
+
+  .group__information {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;;
+  }
+
 }
