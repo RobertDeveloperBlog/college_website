@@ -9,6 +9,16 @@
     <link rel="icon" src="../images/logo-fig-b.png">
   </head>
   <body>
+    <div class="sidebar">
+      <ul>
+        <li>Меню сайта</li>
+        <li><a href="../school/school.html">О школе</a></li>
+        <li><a href="../contacts/contacts.html">Контакты</a></li>
+        <li><a href="#">Личный кабинет</a></li>
+        <li><a href="#">Регистрация</a></li>
+      </ul>
+    </div>
+
     <div class="navbar">
       <div class="navbar-left">
         <img src="../images/logo-fig-b.png"/>
@@ -16,13 +26,16 @@
       </div> <!-- navbar left-->
       <div class="navbar-right">
         <a href="../school/school.html" class="menu" id="about_school">О школе</a>
-        <a class="menu">Расписание</a>
         <a href="../contacts/contacts.html" class="menu" id="contacts">Контакты</a>
-        <a class="menu">Новости</a> 
         <div class="sign-in">Личный кабинет</div>
         <div class="join-now">Регистрация</div> 
         <div class="menu-img">
           <img src="../images/menu.png" id="#menu-img"/>
+          </div>
+        <div class="toggle-btn" onclick="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
       <!-- navbar right-->
@@ -118,5 +131,12 @@
         </div>
     </div>
     <!--footer-->
+
+    <script>
+      
+      function openMenu() {
+        document.querySelector(".sidebar").classList.toggle("active");
+      }
+    </script>
 </body>
 </html>

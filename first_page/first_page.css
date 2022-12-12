@@ -6,6 +6,73 @@ body {
 
 /* Navbar */
 
+
+.sidebar {
+  display: block;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: #57626F;
+  border-right: 4px solid #E0E5EA;
+  left: -250px;
+  z-index: 1;
+
+  transition: all 300ms;
+}
+
+.sidebar.active {
+  left: 0px;
+}
+
+.sidebar ul li:first-child {
+  text-align: center;
+  color: #fff;
+  font-size: 1.95em;
+  list-style: none;
+  padding: 25px 10px 10px 10px;
+}
+
+.sidebar ul li:not(:first-child) {
+  width: 90%;
+  margin-left: 10%;
+  font-size: 1.1em;
+  list-style: none;
+  padding: 15px 10px;
+}
+
+.sidebar ul li a {
+  color: #dfe5eb;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  color: #59e9df;
+}
+
+.toggle-btn {
+  display: none;
+  margin-right: 30px;
+  background: #E0E5EA;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.toggle-btn span {
+  margin-right: 30px;
+  display: none;
+  width: 25px;
+  height: 4px;
+  background-color: #666;
+  margin: 4px 0;
+}
+
+.toggle-btn:hover {background: #556270}
+.toggle-btn:hover span {background: #fafafa}
+
+
+
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -147,8 +214,6 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
-  width: 100%;
-  max-width: 400px;
 }
 
 .circle__programs__title {
@@ -181,7 +246,6 @@ body {
 }
 
 .group__information__item {
-  flex: 1 1 0;
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
@@ -237,7 +301,8 @@ body {
   color: rgba(0, 0, 0, 0.58);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
+
   .sign-in {
     display: none;
   }
@@ -255,12 +320,11 @@ body {
   }  
 
   .navbar {
-    width: 100%;
-    padding: 20px 0px;
+    max-width: 100%;
   }
 
   .menu-img img {
-    display: block;
+    display: none;
     margin-right: 10px;
   }
 
@@ -274,8 +338,15 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
     align-items: center;
+  }
+
+  .circle__programs__item {
+    max-width: 100%;
+  }
+
+  .footer {
+    max-width: 100%;
   }
 
   .circle__programs div {
@@ -283,10 +354,28 @@ body {
   }
 
   .group__information {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: center;;
+    align-items: center;
+    justify-content: center;
   }
 
+  .group__information__item {
+    flex: 1 1 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    width: 100%;
+  }
+
+  /* sidebar-menu */
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .toggle-btn span {
+    display: block;
+  }
 }

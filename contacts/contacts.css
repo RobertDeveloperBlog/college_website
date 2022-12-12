@@ -111,7 +111,7 @@ body {
 }
 
 .inp {
-  display: flex;
+  display: block;
 }
 
 textarea {
@@ -204,4 +204,36 @@ textarea {
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
   color: rgba(0, 0, 0, 0.58);
+}
+
+
+@media (max-width: 950px) {
+
+  .menu {
+    display: none;
+  }  
+
+  .navbar {
+    max-width: 100%;
+  }
+
+  .footer {
+    max-width: 100%;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    max-width: 950px;
+    margin: 50px auto 70px;
+    text-align: center;
+    
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
 }
