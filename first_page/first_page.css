@@ -15,7 +15,7 @@ body {
   background-color: #57626F;
   border-right: 4px solid #E0E5EA;
   left: -250px;
-  z-index: 1;
+  z-index: 2;
 
   transition: all 300ms;
 }
@@ -373,9 +373,22 @@ body {
 
   .toggle-btn {
     display: block;
+    margin-right: 40px;
   }
 
   .toggle-btn span {
     display: block;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  .section__header {
+    margin-top: 150px;
   }
 }

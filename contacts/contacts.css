@@ -227,7 +227,7 @@ textarea {
     justify-content: center;
     padding: 20px 0;
     max-width: 950px;
-    margin: 50px auto 70px;
+    margin: 120px auto 70px;
     text-align: center;
     
   }
@@ -236,4 +236,17 @@ textarea {
     display: flex;
     justify-content: center;
   }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  .back {
+    margin-right: 40px;
+  }
+
 }

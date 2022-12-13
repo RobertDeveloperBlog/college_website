@@ -245,4 +245,16 @@ body {
     margin-right: auto;
   }
 
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  .section {
+    margin-top: 150px;
+  }
+
 }
